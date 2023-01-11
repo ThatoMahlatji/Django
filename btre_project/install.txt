@@ -1,0 +1,16 @@
+Activate virtual environment:
+$ source ./venv/bin/activate
+
+Check installed packages:
+$ pip freeze
+
+Help command:
+$ django-admin help
+
+Django manage command:
+$ python manage.py help
+
+
+
+
+

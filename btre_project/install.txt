@@ -1,6 +1,9 @@
 Activate virtual environment:
 $ source ./venv/bin/activate
 
+To deactivate environment
+$ deactivate
+
 Check installed packages:
 $ pip freeze
 
@@ -10,7 +13,26 @@ $ django-admin help
 Django manage command:
 $ python manage.py help
 
+Run server (runs on http://localhost:8000/)
+$ python manage.py runserver
 
+To create new app / page 
+$ python manage.py startapp pages
 
+Install Postgres 
+- download (https://postgresapp.com/)
+- username: postgre
+- password: (Hint: *fat#)
+# CREATE DATABASE btredb OWNER postgres;
+- list databases: # \l
+- to exit: # \q
 
+PgADmin 
+- download (https://www.pgadmin.org/)
+
+$ export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin/:$PATH"
+$ pip install psycopg2
+$ pip install psycopg2-binary
+
+$ python manage.py migrate
 

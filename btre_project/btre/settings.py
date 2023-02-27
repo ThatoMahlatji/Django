@@ -34,12 +34,15 @@ INSTALLED_APPS = [
     'pages.apps.PagesConfig', # from pages/apps.py
     'listings.apps.ListingsConfig', # from listings/apps.py
     'realtors.apps.RealtorsConfig', # from realtors/apps.py
+    'accounts.apps.AccountsConfig', # from accounts/apps.py
+    'contacts.apps.ContactsConfig', # from contacts/apps.py
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "django.contrib.humanize",
 ]
 
 MIDDLEWARE = [
@@ -129,3 +132,9 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # Media Folder settings
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL='/media/'
+
+# Messages
+from django.contrib.messages import constants as messages
+MESSAGE_TAGS = {
+    messages.ERROR: 'danger',
+}

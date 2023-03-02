@@ -108,7 +108,9 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = "en-us"
 
-TIME_ZONE = "UTC"
+#TIME_ZONE = "UTC"
+
+TIME_ZONE = "Africa/Johannesburg"
 
 USE_I18N = True
 
@@ -138,3 +140,13 @@ from django.contrib.messages import constants as messages
 MESSAGE_TAGS = {
     messages.ERROR: 'danger',
 }
+
+
+# Email config
+EMAIL_HOST = 'mail.findatutor.co.za'
+EMIAL_PORT = 465
+EMIAL_USER = 'admin@findatutor.co.za'
+EMIAL_HOST_PASSWORD = 'admin@fat.email'
+EMAIL_USE_TLS = True
+
+
